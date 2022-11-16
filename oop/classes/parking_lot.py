@@ -1,19 +1,20 @@
 class Parking_Lot():
-    def __init__(self) -> None:
-        self.slots_suv: int
+    def __init__(self, slots_compact: int, slots_suv: int, slots_van: int,
+                time_open: list) -> None:
         self.slots_compact: int
+        self.slots_suv: int
         self.slots_van: int
         self.time_open: list
-        self.user_reservations: list
+        self.user_reservations = []
 
-    def show_slots_compact():
-        pass
+    def show_slots_compact(self):
+        return self.slots_compact
 
-    def show_slots_suv():
-        pass
+    def show_slots_suv(self):
+        return self.slots_suv
 
-    def show_slots_van():
-        pass
+    def show_slots_van(self):
+        return self.slots_van
 
-    def refresh_list():
+    def refresh_list(self):
         pass
