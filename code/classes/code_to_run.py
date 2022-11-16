@@ -1,18 +1,23 @@
-class Pop:
-    def __init__(self, size) -> None:
-        self.size = size
+import abc
+class Parking_Lot():
+    def __init__(self) -> None:
+        pass
 
-class Pep:
-    def __init__(self, Pop) -> None:
-        self.pop = Pop
+class Vehicle(abc):
+    size: int
+    parking_cost: int
 
-    def remove_pepe(self):
-        self.pop.size += 1 
+class Compact(Vehicle):
+    def __init__(self) -> None:
+        super().__init__()
 
-pepe = Pop(2)
+class SUV(Vehicle):
+    def __init__(self) -> None:
+        super().__init__()
 
-popp = Pep(pepe)
-pei = Pep(pepe)
+class Van(Vehicle):
+    def __init__(self) -> None:
+        super().__init__()
 
-popp.remove_pepe()
-print(pei.pop.size)
+class User():
+    pass
