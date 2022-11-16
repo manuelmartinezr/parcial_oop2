@@ -1,4 +1,5 @@
 from .vehicle import Vehicle
-class Compact(Vehicle):
+class SUV(Vehicle):
     def __init__(self) -> None:
-        super().__init__()
+        self.size = 2
+        self.parking_cost = 2
