@@ -5,3 +5,15 @@ class Parking_Lot():
         self.slots_van: int
         self.time_open: list
         self.user_reservations: list
+
+    def show_slots_compact():
+        pass
+
+    def show_slots_suv():
+        pass
+
+    def show_slots_van():
+        pass
+
+    def refresh_list():
+        pass
