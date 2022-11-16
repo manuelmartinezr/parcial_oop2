@@ -7,13 +7,16 @@ class Parking_Lot():
         self.time_open: list
         self.user_reservations = []
 
-    def show_slots_compact(self):
+    @property
+    def slots_compact(self):
         return self.slots_compact
 
-    def show_slots_suv(self):
+    @property
+    def slots_suv(self):
         return self.slots_suv
-
-    def show_slots_van(self):
+    
+    @property
+    def slots_van(self):
         return self.slots_van
 
     def refresh_list(self):
