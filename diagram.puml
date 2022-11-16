@@ -1,0 +1,41 @@
+@startuml
+class Parking_Lot
+{
+slots_suv: int
+slots_compact: int
+slots_van: int
+time_open: list
+user_reservations: list[User]
+}
+abstract class Vehicle
+{
+{abstract}size: int
+{abstract}parking_cost: int
+}
+class Compact
+{
+size: 1
+parking_cost: 1
+}
+class SUV
+{
+size: 2
+parking_cost: 2
+}
+class Van
+{
+size: 3
+parking_cost: 3
+}
+class User
+{
+vehicle: Vehicle
+register()
+}
+Vehicle <|-- Compact
+Vehicle <|-- SUV
+Vehicle <|-- Van
+User *-- Vehicle
+User - Parking_Lot
+Parking_Lot o-- User
+@enduml
